@@ -3,7 +3,7 @@ import requests
 from datetime import date
 from cassandra.cluster import Cluster
 
-cluster = Cluster(contact_points=['172.17.0.2'], port=9042)
+cluster = Cluster(contact_points=['127.0.0.1'], port=9042)
 session = cluster.connect()
 app = Flask(__name__)
 
